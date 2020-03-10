@@ -1,0 +1,39 @@
+<br>
+<br>
+<div class="page-header">
+  <h1>Alumnos: <small>Mostrar.</small></h1>
+</div>
+<br>
+<a routerLink="/alta" class="btn btn-primary ">Nuevo: Alumno(s).</a>
+<br>
+<br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Matricula</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Password</th>
+      <th scope="col">Otros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumno of alumnos">
+      <th scope="row">{{ alumno.id }}</th>
+      <td>{{ alumno.matricula }}</td>
+      <td>{{ alumno.app }} {{ alumno.apm }}, {{ alumno.nombre }}</td>
+      <td>{{ alumno.correo }}</td>
+      <td>{{ alumno.pass }}</td>
+      <td>
+        <a class="btn btn-outline-primary" routerLink="/editar/{{alumno.id}}">Editar</a>
+         &nbsp;&nbsp; 
+        <a class="btn btn-outline-danger" (click)="borrar(alumno.id)">Borrar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
