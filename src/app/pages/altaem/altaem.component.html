@@ -1,0 +1,90 @@
+<div class="page-header">
+    
+  
+  <form class="form">
+    <h1><p style="color:red">Alta Usuarios</p>
+    </h1>
+
+
+    
+
+
+    <div class="form-row">
+
+        <div class="form-group col-md-3">
+            <label for="inputid">ID</label>
+            <input type="text" class="form-control" placeholder="Indicar: ID">
+        </div>
+      <div class="form-group col-md-9">
+          <label for="inputname">Nombre(s)</label>
+          <input type="text" class="form-control" placeholder="Indicar: Nombre(s)">
+      </div>
+      <div class="form-group col-md-6">
+          <label for="inputApp">Apellido Paterno</label>
+          <input type="text" class="form-control" placeholder="Indicar: Apellido Paterno">
+      </div>
+      <div class="form-group col-md-6">
+          <label for="inputApm">Apellido Materno</label>
+          <input type="text" class="form-control" placeholder="Indicar: Apellido Materno">
+      </div>
+    </div>
+    
+   
+    <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Status</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio"  value="0">
+              <label class="form-check-label" for="gridRadios1">
+                Inactivo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio"  value="1">
+              <label class="form-check-label" for="gridRadios2">
+                Activo
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      
+    <div class="form-group">
+        <label for="inputarea">AREA</label>
+        <select  id="inputarea" class="form-control">
+          <option value="1">Desarrollo</option>
+          <option value="2">RH</option>
+          <option value="3">Mercadotecnia</option>
+          <option value="4">testing</option>
+        </select>
+      </div>
+  
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" placeholder="Email" >
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+    </div>
+  
+    <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+    <button (click)="salvarAlumno()" class="btn btn-primary btn-lg btn-block">Guardar</button>
+    <br>
+    <br>
+    <a class="btn btn-secondary btn-danger" routerLink="/alumnos"> -- Atras -- </a>
+  
+  </form>
+  
+  <br>
+  <br>
+  <br>
+  
+  
+  
+  
+  
+  
