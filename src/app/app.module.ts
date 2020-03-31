@@ -19,6 +19,16 @@ import { BusquedaComponent } from './login/busqueda/busqueda.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AltaemComponent } from './pages/altaem/altaem.component';
+import { EntrarComponent } from './login/entrar/entrar.component';
+import { PasswordComponent } from './login/password/password.component';
+import { DiasComponent } from './detalleva/dias/dias.component';
+import { FechasComponent } from './detalleva/fechas/fechas.component';
+import { PeriodoComponent } from './detalleva/periodo/periodo.component';
+import { PrincipaldeComponent } from './detalleva/principalde/principalde.component';
+import { CancelarComponent } from './detalleva/cancelar/cancelar.component';
+import { PeriodofinComponent } from './detalleva/periodofin/periodofin.component';
+import { SolicitarComponent } from './detalleva/solicitar/solicitar.component';
+import { DatosreComponent } from './reporte/datosre/datosre.component';
 
 
 @NgModule({
@@ -35,7 +45,17 @@ import { AltaemComponent } from './pages/altaem/altaem.component';
     BusquedaComponent,
     AboutComponent,
     ItemComponent,
-    AltaemComponent
+    AltaemComponent,
+    EntrarComponent,
+    PasswordComponent,
+    DiasComponent,
+    FechasComponent,
+    PeriodoComponent,
+    PrincipaldeComponent,
+    CancelarComponent,
+    PeriodofinComponent,
+    SolicitarComponent,
+    DatosreComponent
   ],
   imports: [
     BrowserModule,

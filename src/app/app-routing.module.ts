@@ -12,19 +12,23 @@ import { ItemComponent } from './pages/item/item.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { BusquedaComponent } from './login/busqueda/busqueda.component';
 import { AltaemComponent } from './pages/altaem/altaem.component';
+import { PrincipaldeComponent } from './detalleva/principalde/principalde.component';
+import { DatosreComponent } from './reporte/datosre/datosre.component';
 
 const routes: Routes = [
-		{path: '', component: BusquedaComponent}, 
+		{path: '', component: PortafolioComponent}, 
 		{path: 'inicio', component: InicioComponent},
 		{path: 'alumnos', component: MostrarComponent},
 		{path: 'alta', component: AltaComponent},
 		{path: 'editar', component: EditarComponent},
 		{path: 'editar/:id', component: EditarComponent},// << permite enviar parametros
 		{path: 'about', component: AboutComponent},
-		// {path: 'busqueda', component: BusquedaComponent},
+		{path: 'busqueda', component: BusquedaComponent},
 		{path: 'item', component: ItemComponent},
 		{path: 'portafolio', component: PortafolioComponent},
 		{path: 'altaem', component: AltaemComponent},
+		{path: 'principalde', component: PrincipaldeComponent},
+		{path: 'datosre', component: DatosreComponent},
 		{path: '**', pathMatch: "full", redirectTo: ""}
 	];
 
